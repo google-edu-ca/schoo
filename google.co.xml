@@ -112,6 +112,7 @@
 <script type="text/javascript">
     var player = null;
     var sdk;
+    var adv = false;
     var payments = null;
 
     YaGames.init({
@@ -327,107 +328,6 @@
           });
         });
       }
-    }
-  </script>
-<script>
-    function showFullscrenAd() {
-      sdk.adv.showFullscreenAdv({
-        callbacks: {
-          onOpen: () => {
-            window.unityInstance.SendMessage('SDKPlatforms', 'AudioDisable');
-          },
-          onClose: () => {
-            window.unityInstance.SendMessage('SDKPlatforms', 'AudioEnable');
-          },
-          onError: (e) => {
-            window.unityInstance.SendMessage('SDKPlatforms', 'AudioEnable');
-          }
-        }
-      })
-    }
-  </script>
-<script>
-    function purchaseComplete(id) {
-      if (id == 0) {
-        SHOW_ADS = false;
-        sdk.adv.hideBannerAdv();
-      }
-    }
-
-    function rate() {
-
-    }
-    function checkShop() {
-      payments.getPurchases().then(purchases => {
-        if (purchases.some(purchase => purchase.productID === 'weapon_0')) {
-          window.unityInstance.SendMessage('SDKPlatforms', 'ShopComplete', 0);
-        }
-        if (purchases.some(purchase => purchase.productID === 'weapon_1')) {
-          window.unityInstance.SendMessage('SDKPlatforms', 'ShopComplete', 1);
-        }
-        if (purchases.some(purchase => purchase.productID === 'weapon_2')) {
-          window.unityInstance.SendMessage('SDKPlatforms', 'ShopComplete', 2);
-        }
-        if (purchases.some(purchase => purchase.productID === 'weapon_3')) {
-          window.unityInstance.SendMessage('SDKPlatforms', 'ShopComplete', 3);
-        }
-        if (purchases.some(purchase => purchase.productID === 'weapon_4')) {
-          window.unityInstance.SendMessage('SDKPlatforms', 'ShopComplete', 4);
-        }
-        if (purchases.some(purchase => purchase.productID === 'weapon_5')) {
-          window.unityInstance.SendMessage('SDKPlatforms', 'ShopComplete', 5);
-        }
-      }).catch(err => {
-
-      })
-    }
-
-    function initPurchasing() {
-      console.log('Get Purchasing Data....');
-      if (payments != null) {
-        var gameShop = []
-        payments.getCatalog().then(products => {
-          gameShop = products;
-          console.log('Get Catalog Data....');
-          gameShop.forEach(product => {
-            window.unityInstance.SendMessage('SDKPlatforms', 'PurchaseDataId', product.id);
-            window.unityInstance.SendMessage('SDKPlatforms', 'PurchaseDataPrice', product.priceValue);
-            console.log(product.id + ' ' + product.price);
-          });
-        });
-      }
-    }
-
-    function buy(id_buy) {
-      if (payments != null) {
-        payments.purchase({ id: id_buy }).then(purchase => {
-          window.unityInstance.SendMessage('SDKPlatforms', 'PurchasesComplete', id_buy);
-          plsSendGoal(id_buy);
-        });
-      }
-    }
-
-    function rate() {
-    }
-  </script>
-<script>
-    function showRewardedAd(id) {
-      sdk.adv.showRewardedVideo({
-        callbacks: {
-          onOpen: () => {
-            window.unityInstance.SendMessage('SDKPlatforms', 'AudioDisable');
-          },
-          onRewarded: () => {
-            window.unityInstance.SendMessage('SDKPlatforms', 'BuyComplete', id);
-          },
-          onClose: () => {
-            window.unityInstance.SendMessage('SDKPlatforms', 'AudioEnable');
-          },
-          onError: (e) => {
-            window.unityInstance.SendMessage('SDKPlatforms', 'AudioEnable');
-          }
-        }
-      })
     }
   </script>
 </body>
