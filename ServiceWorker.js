@@ -1,10 +1,10 @@
 const cacheName = "GoGoMan-Minecraft Shooter-0.1";
 const contentToCache = [
-    "Build/MineShooter_Yandex.loader.js",
-    "Build/MineShooter_Yandex.framework.js.unityweb",
-    "Build/MineShooter_Yandex.data.unityweb",
-    "Build/MineShooter_Yandex.wasm.unityweb",
-    "TemplateData/style.css"
+    "https://cdn.jsdelivr.net/gh/google-edu-ca/schoo@main/Build/MineShooter_Yandex.loader.js",
+    "https://cdn.jsdelivr.net/gh/google-edu-ca/schoo@main/Build/MineShooter_Yandex.framework.js.unityweb",
+    "https://cdn.jsdelivr.net/gh/google-edu-ca/schoo@main/Build/MineShooter_Yandex.data.unityweb",
+    "https://cdn.jsdelivr.net/gh/google-edu-ca/schoo@main/Build/MineShooter_Yandex.wasm.unityweb",
+    "https://cdn.jsdelivr.net/gh/google-edu-ca/schoo@main/TemplateData/style.css"
 
 ];
 
