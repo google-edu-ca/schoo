@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+<head><meta http-equiv="Content-Security-Policy" content="child-src 'self' *.allwebgames.com *.gametok.com *.juegocasa.com *.playhop.com *.wowspiele.de *.yandex.az *.yandex.by *.yandex.co.il *.yandex.com *.yandex.com.am *.yandex.com.ge *.yandex.com.tr *.yandex.ee *.yandex.fr *.yandex.kg *.yandex.kz *.yandex.lt *.yandex.lv *.yandex.md *.yandex.ru *.yandex.tj *.yandex.tm *.yandex.ua *.yandex.uz allwebgames.com blob: gametok.com juegocasa.com playhop.com wowspiele.de yandex.az yandex.by yandex.co.il yandex.com yandex.com.am yandex.com.ge yandex.com.tr yandex.ee yandex.fr yandex.kg yandex.kz yandex.lt yandex.lv yandex.md yandex.ru yandex.tj yandex.tm yandex.ua yandex.uz; connect-src 'self' *.allwebgames.com *.eponesh.com *.gameanalytics.com *.gametok.com *.juegocasa.com *.playhop.com *.unity3d.com *.website.yandexcloud.net *.wowspiele.de *.yandex.az *.yandex.by *.yandex.co.il *.yandex.com *.yandex.com.am *.yandex.com.ge *.yandex.com.tr *.yandex.ee *.yandex.fr *.yandex.kg *.yandex.kz *.yandex.lt *.yandex.lv *.yandex.md *.yandex.net *.yandex.ru *.yandex.tj *.yandex.tm *.yandex.ua *.yandex.uz allwebgames.com blob: data: gametok.com juegocasa.com playhop.com storage.yandexcloud.net wowspiele.de wss://*.eponesh.com:* www.google-analytics.com www.googletagmanager.com yandex.az yandex.by yandex.co.il yandex.com yandex.com.am yandex.com.ge yandex.com.tr yandex.ee yandex.fr yandex.kg yandex.kz yandex.lt yandex.lv yandex.md yandex.ru yandex.tj yandex.tm yandex.ua yandex.uz yandexmetrica.com yastatic.net; default-src 'self'; font-src 'self' *.allwebgames.com *.gametok.com *.juegocasa.com *.playhop.com *.website.yandexcloud.net *.wowspiele.de *.yandex.az *.yandex.by *.yandex.co.il *.yandex.com *.yandex.com.am *.yandex.com.ge *.yandex.com.tr *.yandex.ee *.yandex.fr *.yandex.kg *.yandex.kz *.yandex.lt *.yandex.lv *.yandex.md *.yandex.ru *.yandex.tj *.yandex.tm *.yandex.ua *.yandex.uz allwebgames.com data: fonts.gstatic.com gametok.com juegocasa.com playhop.com storage.yandexcloud.net wowspiele.de yandex.az yandex.by yandex.co.il yandex.com yandex.com.am yandex.com.ge yandex.com.tr yandex.ee yandex.fr yandex.kg yandex.kz yandex.lt yandex.lv yandex.md yandex.ru yandex.tj yandex.tm yandex.ua yandex.uz yastat.net yastatic.net; frame-src 'self' *.allwebgames.com *.gametok.com *.juegocasa.com *.playhop.com *.website.yandexcloud.net *.wowspiele.de *.yandex.az *.yandex.by *.yandex.co.il *.yandex.com *.yandex.com.am *.yandex.com.ge *.yandex.com.tr *.yandex.ee *.yandex.fr *.yandex.kg *.yandex.kz *.yandex.lt *.yandex.lv *.yandex.md *.yandex.ru *.yandex.tj *.yandex.tm *.yandex.ua *.yandex.uz allwebgames.com gametok.com juegocasa.com localhost playhop.com wowspiele.de yandex.az yandex.by yandex.co.il yandex.com yandex.com.am yandex.com.ge yandex.com.tr yandex.ee yandex.fr yandex.kg yandex.kz yandex.lt yandex.lv yandex.md yandex.ru yandex.tj yandex.tm yandex.ua yandex.uz yastatic.net; img-src 'self' *.allwebgames.com *.eponesh.com *.gametok.com *.juegocasa.com *.playhop.com *.website.yandexcloud.net *.wowspiele.de *.yandex.az *.yandex.by *.yandex.co.il *.yandex.com *.yandex.com.am *.yandex.com.ge *.yandex.com.tr *.yandex.ee *.yandex.fr *.yandex.kg *.yandex.kz *.yandex.lt *.yandex.lv *.yandex.md *.yandex.net *.yandex.ru *.yandex.tj *.yandex.tm *.yandex.ua *.yandex.uz allwebgames.com blob: data: gametok.com juegocasa.com playhop.com storage.yandexcloud.net wowspiele.de yandex.az yandex.by yandex.co.il yandex.com yandex.com.am yandex.com.ge yandex.com.tr yandex.ee yandex.fr yandex.kg yandex.kz yandex.lt yandex.lv yandex.md yandex.ru yandex.tj yandex.tm yandex.ua yandex.uz yastatic.net; media-src 'self' *.allwebgames.com *.gametok.com *.juegocasa.com *.playhop.com *.website.yandexcloud.net *.wowspiele.de *.yandex.az *.yandex.by *.yandex.co.il *.yandex.com *.yandex.com.am *.yandex.com.ge *.yandex.com.tr *.yandex.ee *.yandex.fr *.yandex.kg *.yandex.kz *.yandex.lt *.yandex.lv *.yandex.md *.yandex.net *.yandex.ru *.yandex.tj *.yandex.tm *.yandex.ua *.yandex.uz allwebgames.com blob: data: gametok.com juegocasa.com playhop.com storage.yandexcloud.net wowspiele.de yandex.az yandex.by yandex.co.il yandex.com yandex.com.am yandex.com.ge yandex.com.tr yandex.ee yandex.fr yandex.kg yandex.kz yandex.lt yandex.lv yandex.md yandex.ru yandex.tj yandex.tm yandex.ua yandex.uz; object-src 'self' *.allwebgames.com *.gametok.com *.juegocasa.com *.playhop.com *.wowspiele.de *.yandex.az *.yandex.by *.yandex.co.il *.yandex.com *.yandex.com.am *.yandex.com.ge *.yandex.com.tr *.yandex.ee *.yandex.fr *.yandex.kg *.yandex.kz *.yandex.lt *.yandex.lv *.yandex.md *.yandex.ru *.yandex.tj *.yandex.tm *.yandex.ua *.yandex.uz allwebgames.com blob: gametok.com juegocasa.com playhop.com wowspiele.de yandex.az yandex.by yandex.co.il yandex.com yandex.com.am yandex.com.ge yandex.com.tr yandex.ee yandex.fr yandex.kg yandex.kz yandex.lt yandex.lv yandex.md yandex.ru yandex.tj yandex.tm yandex.ua yandex.uz; script-src 'self' 'unsafe-eval' 'unsafe-inline' *.allwebgames.com *.eponesh.com *.gameanalytics.com *.gametok.com *.juegocasa.com *.playhop.com *.website.yandexcloud.net *.wowspiele.de *.ya.ru *.yandex.az *.yandex.by *.yandex.co.il *.yandex.com *.yandex.com.am *.yandex.com.ge *.yandex.com.tr *.yandex.ee *.yandex.fr *.yandex.kg *.yandex.kz *.yandex.lt *.yandex.lv *.yandex.md *.yandex.ru *.yandex.tj *.yandex.tm *.yandex.ua *.yandex.uz abt.s3.yandex.net allwebgames.com blob: data: gametok.com juegocasa.com playhop.com storage.yandexcloud.net wowspiele.de www.google-analytics.com www.googletagmanager.com ya.ru yandex.az yandex.by yandex.co.il yandex.com yandex.com.am yandex.com.ge yandex.com.tr yandex.ee yandex.fr yandex.kg yandex.kz yandex.lt yandex.lv yandex.md yandex.ru yandex.tj yandex.tm yandex.ua yandex.uz yastatic.net; style-src 'self' 'unsafe-eval' 'unsafe-inline' *.allwebgames.com *.gametok.com *.juegocasa.com *.playhop.com *.website.yandexcloud.net *.wowspiele.de *.yandex.az *.yandex.by *.yandex.co.il *.yandex.com *.yandex.com.am *.yandex.com.ge *.yandex.com.tr *.yandex.ee *.yandex.fr *.yandex.kg *.yandex.kz *.yandex.lt *.yandex.lv *.yandex.md *.yandex.ru *.yandex.tj *.yandex.tm *.yandex.ua *.yandex.uz allwebgames.com blob: data: fonts.googleapis.com gametok.com juegocasa.com playhop.com storage.yandexcloud.net wowspiele.de yandex.az yandex.by yandex.co.il yandex.com yandex.com.am yandex.com.ge yandex.com.tr yandex.ee yandex.fr yandex.kg yandex.kz yandex.lt yandex.lv yandex.md yandex.ru yandex.tj yandex.tm yandex.ua yandex.uz; worker-src 'self' *.allwebgames.com *.gametok.com *.juegocasa.com *.playhop.com *.website.yandexcloud.net *.wowspiele.de *.yandex.az *.yandex.by *.yandex.co.il *.yandex.com *.yandex.com.am *.yandex.com.ge *.yandex.com.tr *.yandex.ee *.yandex.fr *.yandex.kg *.yandex.kz *.yandex.lt *.yandex.lv *.yandex.md *.yandex.ru *.yandex.tj *.yandex.tm *.yandex.ua *.yandex.uz allwebgames.com blob: gametok.com juegocasa.com playhop.com storage.yandexcloud.net wowspiele.de yandex.az yandex.by yandex.co.il yandex.com yandex.com.am yandex.com.ge yandex.com.tr yandex.ee yandex.fr yandex.kg yandex.kz yandex.lt yandex.lv yandex.md yandex.ru yandex.tj yandex.tm yandex.ua yandex.uz"/>
+<meta charset="utf-8"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Unity WebGL Player | Minecraft Shooter</title>
+<link rel="shortcut icon" href="TemplateData/favicon.ico"/>
+<link rel="stylesheet" href="TemplateData/style.css"/>
+<link rel="manifest" href="manifest.webmanifest"/>
+</head>
+<body>
+<div id="unity-container">
+<canvas id="unity-canvas" width="960" height="600" tabindex="-1"></canvas>
+<div id="unity-loading-bar">
+<div id="unity-logo"></div>
+<div id="unity-progress-bar-empty">
+<div id="unity-progress-bar-full"></div>
+</div>
+</div>
+<div id="unity-warning"> </div>
+</div>
+<script>
+    window.addEventListener("load", function () {
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("ServiceWorker.js");
+      }
+    });
+
+    var container = document.querySelector("#unity-container");
+    var canvas = document.querySelector("#unity-canvas");
+    var loadingBar = document.querySelector("#unity-loading-bar");
+    var progressBarFull = document.querySelector("#unity-progress-bar-full");
+    var warningBanner = document.querySelector("#unity-warning");
+
+    // Shows a temporary message banner/ribbon for a few seconds, or
+    // a permanent error message on top of the canvas if type=='error'.
+    // If type=='warning', a yellow highlight color is used.
+    // Modify or remove this function to customize the visually presented
+    // way that non-critical warnings and error messages are presented to the
+    // user.
+    function unityShowBanner(msg, type) {
+      function updateBannerVisibility() {
+        warningBanner.style.display = warningBanner.children.length ? 'block' : 'none';
+      }
+      var div = document.createElement('div');
+      div.innerHTML = msg;
+      warningBanner.appendChild(div);
+      if (type == 'error') div.style = 'background: red; padding: 10px;';
+      else {
+        if (type == 'warning') div.style = 'background: yellow; padding: 10px;';
+        setTimeout(function () {
+          warningBanner.removeChild(div);
+          updateBannerVisibility();
+        }, 5000);
+      }
+      updateBannerVisibility();
+    }
+
+    var buildUrl = "Build";
+    var loaderUrl = buildUrl + "/MineShooter_Yandex.loader.js";
+    var config = {
+      dataUrl: buildUrl + "/MineShooter_Yandex.data.unityweb",
+      frameworkUrl: buildUrl + "/MineShooter_Yandex.framework.js.unityweb",
+      codeUrl: buildUrl + "/MineShooter_Yandex.wasm.unityweb",
+      streamingAssetsUrl: "StreamingAssets",
+      companyName: "GoGoMan",
+      productName: "Minecraft Shooter",
+      productVersion: "0.1",
+      showBanner: unityShowBanner,
+    };
+
+    // By default Unity keeps WebGL canvas render target size matched with
+    // the DOM size of the canvas element (scaled by window.devicePixelRatio)
+    // Set this to false if you want to decouple this synchronization from
+    // happening inside the engine, and you would instead like to size up
+    // the canvas DOM size and WebGL render target sizes yourself.
+    // config.matchWebGLToCanvasSize = false;
+
+    if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+      // Mobile device style: fill the whole browser client area with the game canvas:
+      var meta = document.createElement('meta');
+      meta.name = 'viewport';
+      meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
+      document.getElementsByTagName('head')[0].appendChild(meta);
+      config.devicePixelRatio = 1;
+      window.devicePixelRatio = 1;
+    }
+
+    canvas.style.background = "url('" + buildUrl + "/MineShooter_Yandex.jpg.unityweb') center / cover";
+    loadingBar.style.display = "block";
+
+    var script = document.createElement("script");
+    script.src = loaderUrl;
+    script.onload = () => {
+      createUnityInstance(canvas, config, (progress) => {
+        progressBarFull.style.width = 100 * progress + "%";
+      }).then((unityInstance) => {
+        window.unityInstance = unityInstance;
+        loadingBar.style.display = "none";
+      }).catch((message) => {
+        alert(message);
+      });
+    };
+    document.body.appendChild(script);
+  </script>
+<script src="/sdk.js"></script>
+<script type="text/javascript">
+    var player = null;
+    var sdk;
+    var payments = null;
+
+    YaGames.init({
+      adv: {
+        onAdvClose: wasShown => {
+          console.info('adv closed!');
+        }
+      }
+    })
+      .then(ysdk => {
+        sdk = ysdk;
+        ysdk.getPlayer({
+          signed: true
+        }).then(_player => {
+          player = _player;
+        }).catch(err => { });
+
+        sdk.adv.showFullscreenAdv({
+          callbacks: {}
+        });
+
+        ysdk.getPayments({
+          signed: true
+        }).then(_payments => {
+          payments = _payments;
+          console.log("Purchasing True");
+        }).catch(err => { });
+
+      });
+
+    function checkCom() {
+      var isCom = 0;
+      var output;
+
+      if (payments != null) {
+        initPurchasing();
+        checkShop();
+      }
+
+      if (sdk != null) {
+        var output = sdk.environment.i18n.tld;
+        if (output == "com") {
+          isCom = 1;
+        }
+      }
+
+      console.log(output);
+      console.log(isCom);
+
+      window.unityInstance.SendMessage('GameManager', 'IsCom', isCom);
+    }
+
+    function checkLanguage() {
+      var currentLanguage = 1;
+      var output;
+
+      if (sdk != null) {
+        var output = sdk.environment.i18n.lang;
+        if (output == "ru" || output == "be" || output == "kk" || output == "uk" || output == "uz")
+          currentLanguage = 1;
+        else
+          currentLanguage = 0;
+      }
+
+      console.log(output);
+      console.log(currentLanguage);
+
+      window.unityInstance.SendMessage('GameManager', 'SetLanguage', currentLanguage);
+    }
+
+    function checkLanguageYa() {
+      var currentLanguage = 1;
+      var output;
+
+      if (sdk != null) {
+        var output = sdk.environment.i18n.lang;
+        if (output == "ru" || output == "be" || output == "kk" || output == "uk" || output == "uz")
+          currentLanguage = 1;
+        else
+          currentLanguage = 0;
+      }
+
+      console.log(output);
+      console.log(currentLanguage);
+
+      window.unityInstance.SendMessage('GameManager', 'SetLanguage', currentLanguage);
+    }
+
+    function loadData() {
+      if (player != null) {
+        player.getData(["levels", "sounds", "russian", "sensivity", "buys1", "buys2", "buys3", "buys4", "buys5", "buys6"]).then(data => {
+          if (data.levels) {
+            var sounds;
+            var rus;
+            var buyed1;
+            var buyed2;
+            var buyed3;
+            var buyed4;
+            var buyed5;
+            var buyed6;
+            if (data.sounds) {
+              sounds = 1;
+            } else {
+              sounds = 0;
+            }
+            if (data.russian) {
+              rus = 1;
+            } else {
+              rus = 0;
+            }
+
+            if (data.buys1) {
+              buyed1 = 1;
+            }
+            else {
+              buyed1 = 0;
+            }
+            if (data.buys2) {
+              buyed2 = 1;
+            }
+            else {
+              buyed2 = 0;
+            }
+            if (data.buys3) {
+              buyed3 = 1;
+            }
+            else {
+              buyed3 = 0;
+            }
+            if (data.buys4) {
+              buyed4 = 1;
+            }
+            else {
+              buyed4 = 0;
+            }
+            if (data.buys5) {
+              buyed5 = 1;
+            }
+            else {
+              buyed5 = 0;
+            }
+            if (data.buys6) {
+              buyed6 = 1;
+            }
+            else {
+              buyed6 = 0;
+            }
+
+
+            var dataStr = data.levels + ' ' + sounds + ' ' + rus + ' ' + data.sensivity + ' ' + buyed1 + ' ' + buyed2 + ' ' + buyed3 + ' ' + buyed4 + ' ' + buyed5 + ' ' + buyed6;
+            console.log('Get Data ', dataStr);
+            window.unityInstance.SendMessage('SDKPlatforms', 'LoadCloud', dataStr);
+          }
+        }).catch(() => {
+          console.log('No Data');
+        });
+      }
+    }
+  </script>
+<script>
+    function saveData(level, isSound, isRussian, sensitivity, buy1, buy2, buy3, buy4, buy5, buy6) {
+      console.log('Saving....');
+      if (player != null) {
+        player.getData(["levels", "sounds", "russian", "sensivity", "buys1", "buys2", "buys3", "buys4", "buys5", "buys6"]).then(data => {
+          if (data.levels) {
+            if (data.levels <= level) {
+              player.setData({
+                levels: level,
+                sounds: isSound,
+                russian: isRussian,
+                sensivity: sensitivity,
+                buys1: buy1,
+                buys2: buy2,
+                buys3: buy3,
+                buys4: buy4,
+                buys5: buy5,
+                buys6: buy6
+              }).then(() => {
+                console.log('data is set -update');
+              });
+            }
+          } else {
+            player.setData({
+              levels: level,
+              sounds: isSound,
+              russian: isRussian,
+              sensivity: sensitivity,
+              buys1: buy1,
+              buys2: buy2,
+              buys3: buy3,
+              buys4: buy4,
+              buys5: buy5,
+              buys6: buy6
+            }).then(() => {
+              console.log('data is set -first');
+            });
+          }
+
+        }).catch(() => {
+          player.setData({
+            levels: level,
+            sounds: isSound,
+            russian: isRussian,
+            sensivity: sensitivity,
+            buys1: buy1,
+            buys2: buy2,
+            buys3: buy3,
+            buys4: buy4,
+            buys5: buy5,
+            buys6: buy6
+          }).then(() => {
+            console.log('data is set -first');
+          });
+        });
+      }
+    }
+  </script>
+<script>
+    function showFullscrenAd() {
+      sdk.adv.showFullscreenAdv({
+        callbacks: {
+          onOpen: () => {
+            window.unityInstance.SendMessage('SDKPlatforms', 'AudioDisable');
+          },
+          onClose: () => {
+            window.unityInstance.SendMessage('SDKPlatforms', 'AudioEnable');
+          },
+          onError: (e) => {
+            window.unityInstance.SendMessage('SDKPlatforms', 'AudioEnable');
+          }
+        }
+      })
+    }
+  </script>
+<script>
+    function purchaseComplete(id) {
+      if (id == 0) {
+        SHOW_ADS = false;
+        sdk.adv.hideBannerAdv();
+      }
+    }
+
+    function rate() {
+
+    }
+    function checkShop() {
+      payments.getPurchases().then(purchases => {
+        if (purchases.some(purchase => purchase.productID === 'weapon_0')) {
+          window.unityInstance.SendMessage('SDKPlatforms', 'ShopComplete', 0);
+        }
+        if (purchases.some(purchase => purchase.productID === 'weapon_1')) {
+          window.unityInstance.SendMessage('SDKPlatforms', 'ShopComplete', 1);
+        }
+        if (purchases.some(purchase => purchase.productID === 'weapon_2')) {
+          window.unityInstance.SendMessage('SDKPlatforms', 'ShopComplete', 2);
+        }
+        if (purchases.some(purchase => purchase.productID === 'weapon_3')) {
+          window.unityInstance.SendMessage('SDKPlatforms', 'ShopComplete', 3);
+        }
+        if (purchases.some(purchase => purchase.productID === 'weapon_4')) {
+          window.unityInstance.SendMessage('SDKPlatforms', 'ShopComplete', 4);
+        }
+        if (purchases.some(purchase => purchase.productID === 'weapon_5')) {
+          window.unityInstance.SendMessage('SDKPlatforms', 'ShopComplete', 5);
+        }
+      }).catch(err => {
+
+      })
+    }
+
+    function initPurchasing() {
+      console.log('Get Purchasing Data....');
+      if (payments != null) {
+        var gameShop = []
+        payments.getCatalog().then(products => {
+          gameShop = products;
+          console.log('Get Catalog Data....');
+          gameShop.forEach(product => {
+            window.unityInstance.SendMessage('SDKPlatforms', 'PurchaseDataId', product.id);
+            window.unityInstance.SendMessage('SDKPlatforms', 'PurchaseDataPrice', product.priceValue);
+            console.log(product.id + ' ' + product.price);
+          });
+        });
+      }
+    }
+
+    function buy(id_buy) {
+      if (payments != null) {
+        payments.purchase({ id: id_buy }).then(purchase => {
+          window.unityInstance.SendMessage('SDKPlatforms', 'PurchasesComplete', id_buy);
+          plsSendGoal(id_buy);
+        });
+      }
+    }
+
+    function rate() {
+    }
+  </script>
+<script>
+    function showRewardedAd(id) {
+      sdk.adv.showRewardedVideo({
+        callbacks: {
+          onOpen: () => {
+            window.unityInstance.SendMessage('SDKPlatforms', 'AudioDisable');
+          },
+          onRewarded: () => {
+            window.unityInstance.SendMessage('SDKPlatforms', 'BuyComplete', id);
+          },
+          onClose: () => {
+            window.unityInstance.SendMessage('SDKPlatforms', 'AudioEnable');
+          },
+          onError: (e) => {
+            window.unityInstance.SendMessage('SDKPlatforms', 'AudioEnable');
+          }
+        }
+      })
+    }
+  </script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date();
+      for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+      k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(93109461, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+<noscript>
+<div><img src="https://mc.yandex.ru/watch/93109461" style="position:absolute; left:-9999px;" alt=""/></div>
+</noscript>
+<!-- /Yandex.Metrika counter -->
+<script type="text/javascript">
+    function plsSendGoal(id) {
+      ym(93109461, 'reachGoal', id);
+      console.log('метрика отправлена: ' + id);
+    }
+  </script>
+</body>
+</html>
